@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+
+	
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="icon" href="images/site-logo.png" />
+	<title>WANDERERS</title>
+</head>
+<body>	
+	
+<section>
+		
+<header>
+<marquee style="background-color:#112255; color:white;">CONTACT US: jagjotsk1999@gmail.com, yakshijindal@gmail.com MOBILE: 7009337767, 7452000046</marquee>			
+<nav>
+				
+<div class="upper_navbar">
+					
+<div class="menu1">
+						
+<ul>
+							
+<li><a href="main.html">Home</a></li>
+<li><a href="form2.html">Contact Us</a></li>				
+<li><a href="form3.html">Blogs</a></li>
+						
+</ul>
+					
+</div>
+				
+</div>
+				
+<div class="lower_navbar">
+					
+<div class="lower_navbar_content">
+						
+<div class="menu-icon">
+							
+
+						
+</div>
+						
+<div class="logo">
+							
+<a href="main.html"><img src="images/logo.png" width="230px"></a>
+						
+</div>
+						
+<ul class="dropdown-menu">
+							
+<li><a href="">Packages<i class="fas fa-caret-down"></i></a>
+								
+<ul>
+									
+<li><a href="activities.html">Trekking</a></li>
+									
+<li><a href="events-and-festivals.html">Honeymoon</a></li>
+								
+</ul>
+							
+</li>
+							
+							
+<li><a href="">Plan your trip<i class="fas fa-caret-down"></i></a>
+								
+<ul>
+									
+<li><a href="accomodations.html">Book an Accomodation</a></li>
+								
+</ul>
+							
+</li>
+							
+
+                         
+<h1 class="welcome">Welcome to<br> <span class="wand">WANDERERS</span></h1>
+                         
+<h5 class="slogan">Your Destination, Our Way...!!</h5>
+                            
+                     
+<div class="loginbox">
+    <h1 style="color: deepskyblue">Login Here</h1>
+        
+<form onsubmit="return func()">
+        <p>Username</p>
+            <input type="text" name="username" placeholder="Enter Username" id="fname">
+            <p>Password</p>
+            <input type="password" name="password" placeholder="Enter Password" id="pass">
+			<input type="submit" name="submit" value="login">
+            <button style="width:265px;"><a href="form after login.html" target="_blank">Register Here</a></button><br>
+            <a href="#" style="color:white">Forgot Password?</a>
+        </form>
+   
+    
+    
+   
+</div>                           
+                            
+</header>        
+	
+
+</body>
+<script>
+function func()
+{
+	var fname=document.getElementById('fname');
+	var addrs=document.getElementById("pass");
+	if(isAlphabet(fname,"Enter alphabets only"))
+	{
+		if(isalphanumeric(addrs,"alphanumeric only"))
+		{
+			return true;
+		}
+	}
+return false;
+}
+function isAlphabet(fname,msg)
+{
+	var regexp1=/^[a-zA-Z]+$/;
+	if(fname.value.match(regexp1))
+	return true;
+	else{
+	alert(msg)
+	fname.focus();
+	return false;
+	}	
+}
+function isalphanumeric(addrs,msg)
+{
+	var regexp2=/^[0-9a-zA-Z]/;
+	if(addrs.value.match(regexp2))
+	return true;
+	else{
+	alert(msg)
+	return false;
+	}	
+}
+</script>
+</html>
